@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot arT</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box messages" id="chat-box">
+            <!-- Mensagens de chat aparecerão aqui -->
+        </div>
+        <input type="text" class="user-input" id="user-input" placeholder="Digite sua mensagem..." />
+        <button class="send-button" onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendButton = document.querySelector('.send-button');
+            const userInput = document.querySelector('.user-input');
+            const messagesContainer = document.querySelector('#chat-box');
+
+            const botReplies = [
+                "E aí, guerreiro! Sou o arT, o capitão da FURIA. Bora conversar?",
+                "Meu estilo de jogo agressivo vem da minha filosofia: quem não arrisca não petisca!",
+                "Ser capitão da FURIA é um desafio diário, mas amo liderar esse time de guerreiros.",
+                "Nosso estilo de jogo único vem da nossa química e da vontade de quebrar paradigmas.",
+                "A pressão que fazemos vem do treino intenso e da confiança que temos uns nos outros."
+            ];
+
+            function addMessage(content, isBot = true) {
+                const message = document.createElement('p');
+                message.classList.add(isBot ? 'bot-message' : 'user-message');
+                message.innerHTML = `<strong>${isBot ? 'arT' : 'Você'}:</strong> ${content}`;
+                messagesContainer.appendChild(message);
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            addMessage(botReplies[0]);
+
+            sendButton.addEventListener('click', function() {
+                const userMessage = userInput.value.trim();
+                if (userMessage !== "") {
+                    addMessage(userMessage, false); // Exibe a mensagem do usuário
+                    userInput.value = ""; // Limpa o campo de entrada
+                    const botMessage = botReplies[Math.floor(Math.random() * botReplies.length)];
+                    setTimeout(() => addMessage(botMessage), 500); // Resposta do bot após um pequeno atraso
+                }
+            });
+
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && userInput.value.trim() !== "") {
+                    sendButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

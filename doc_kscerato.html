@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentário - KSCERATO (FURIA)</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    nav a {
+      color: #f7a600;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1); /* Efeito de escala */
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #f7a600;
+      margin-top: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-top: 40px;
+      color: #f7a600;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    p, li {
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    a.button {
+      color: #fff;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #f7a600;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.button:hover {
+      background: #e0a100;
+      transform: scale(1.05);
+    }
+
+    .intro-image {
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto;
+      border-radius: 15px;
+      border: 3px solid #f7a600;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin-top: 30px;
+      border: 5px solid #f7a600;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #f7a600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+
+    .gallery-section h2 {
+      margin-bottom: 20px; /* Espaço entre o título da galeria e as imagens */
+    }
+
+    .timeline ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .timeline li {
+      background: #1e1e1e;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 5px solid #f7a600;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #ccc;
+      margin: 20px auto;
+      max-width: 700px;
+      border-left: 4px solid #f7a600;
+      padding-left: 15px;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #f7a600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .social-media ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-media li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-media a {
+      color: #f7a600;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    .faq div {
+      margin: 10px 0;
+    }
+
+    .faq strong {
+      color: #f7a600;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <h1>Documentário: KSCERATO - A Força Silenciosa</h1>
+  <p>Kaike "KSCERATO" Cerato é um jogador versátil, sempre pronto para se adaptar às necessidades da equipe.</p>
+
+  <img src="/assets/k1.jpg" alt="KSCERATO, A Força Silenciosa" class="intro-image" />
+
+  <section class="bio">
+    <h2>Quem é KSCERATO?</h2>
+    <p>Kaike "KSCERATO" Cerato é conhecido por sua precisão e versatilidade no jogo. Sua contribuição para a FURIA é fundamental para o sucesso da equipe nos maiores campeonatos.</p>
+  </section>
+
+  <section class="highlights">
+    <h2>Principais Conquistas</h2>
+    <ul>
+      <li>Reconhecido por sua mira afiada e consistência no cenário internacional.</li>
+      <li>Parte essencial da equipe FURIA nas vitórias nos campeonatos internacionais.</li>
+      <li>Famoso por sua habilidade em momentos decisivos.</li>
+    </ul>
+  </section>
+
+  <section class="timeline">
+    <h2>Linha do Tempo</h2>
+    <ul>
+      <li><strong>2017:</strong> KSCERATO se junta à FURIA e começa a sua jornada.</li>
+      <li><strong>2019:</strong> FURIA conquista grandes vitórias em campeonatos internacionais.</li>
+      <li><strong>2021:</strong> KSCERATO se solidifica como um dos melhores jogadores do cenário mundial.</li>
+    </ul>
+  </section>
+
+  <section class="videos">
+    <h2>Documentário em Vídeo</h2>
+    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery">
+      <img src="/assets/k2.jpg" alt="KSCERATO em ação">
+      <img src="/assets/k3.jpg" alt="KSCERATO com sua equipe">
+      <img src="/assets/k4.jpg" alt="KSCERATO celebrando uma vitória">
+    </div>
+  </section>
+
+  <section class="legacy">
+    <h2>Legado e Influência</h2>
+    <p>KSCERATO é conhecido por sua precisão e adaptação. Ele se tornou uma das maiores referências do CS:GO, ajudando a FURIA a se destacar internacionalmente.</p>
+  </section>
+
+  <section class="social-media">
+    <h2>Redes Sociais</h2>
+    <ul>
+      <li><a href="https://twitter.com/kscerato" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/kscerato" target="_blank">Instagram</a></li>
+      <li><a href="https://www.twitch.tv/kscerato" target="_blank">Twitch</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="index.html" class="button">Voltar para a Home</a>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight) {
+          section.classList.add("visible");
+        } else {
+          section.classList.remove("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

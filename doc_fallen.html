@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentário - FalleN (FURIA)</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    nav div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav img {
+      height: 40px;
+    }
+
+    nav a {
+      color: #f7a600;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #f7a600;
+      margin-top: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      font-size: 2.2em;
+      margin-top: 40px;
+      color: #f7a600;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    p, li {
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    a.button {
+      color: #fff;
+      text-decoration: none;
+      margin-top: 30px;
+      padding: 15px 25px;
+      background: #f7a600;
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.button:hover {
+      background: #e0a100;
+      transform: scale(1.05);
+    }
+
+    .intro-image {
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto;
+      border-radius: 15px;
+      border: 3px solid #f7a600;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 400px;
+      margin-top: 30px;
+      border: 5px solid #f7a600;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    .gallery-section {
+      margin-top: 60px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #f7a600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+
+    .timeline ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .timeline li {
+      background: #1e1e1e;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 5px solid #f7a600;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #ccc;
+      margin: 20px auto;
+      max-width: 700px;
+      border-left: 4px solid #f7a600;
+      padding-left: 15px;
+    }
+
+    footer {
+      margin: 40px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #f7a600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    .news ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .news li {
+      background-color: #1e1e1e;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #f7a600;
+    }
+
+    .social-media ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-media li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-media a {
+      color: #f7a600;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    .faq div {
+      margin: 10px 0;
+    }
+
+    .faq strong {
+      color: #f7a600;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <h1>Documentário: FalleN - O Professor</h1>
+  <p>Descubra a história de Gabriel "FalleN" Toledo, o jogador que revolucionou o CS brasileiro e fundou a famosa FalleN School.</p>
+
+  <img src="/assets/fallen2.jpg" alt="FalleN, O Professor" class="intro-image" />
+
+  <section class="bio">
+    <h2>Quem é FalleN?</h2>
+    <p>FalleN é um dos maiores nomes do CS:GO, conhecido pela sua habilidade tática, liderança e pela popularização do estilo de jogo agressivo. Seu legado vai além das vitórias, sendo um mentor para futuras gerações.</p>
+  </section>
+
+  <section class="highlights">
+    <h2>Principais Conquistas</h2>
+    <ul>
+      <li>Vencedor de Majors e torneios internacionais de CS:GO.</li>
+      <li>Capitão da FURIA durante campanhas memoráveis.</li>
+      <li>Fundador da FalleN School, onde novos talentos são capacitados.</li>
+    </ul>
+  </section>
+
+  <section class="timeline">
+    <h2>Linha do Tempo</h2>
+    <ul>
+      <li><strong>2014:</strong> Destaque com a KaBuM.TD</li>
+      <li><strong>2016:</strong> Bicampeão mundial com SK Gaming</li>
+      <li><strong>2020:</strong> Lançamento da FalleN Store e School</li>
+      <li><strong>2023:</strong> Chegada na FURIA</li>
+    </ul>
+  </section>
+
+  <section class="videos">
+    <h2>Documentário em Vídeo</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery">
+      <img src="/assets/fallen3.jpg" alt="FalleN em ação">
+      <img src="/assets/fallen4.jpg" alt="FalleN com a equipe">
+      <img src="/assets/fallen5.jpg" alt="FalleN celebrando uma vitória">
+    </div>
+  </section>
+
+  <section class="legacy">
+    <h2>Legado e Influência</h2>
+    <p>FalleN é uma lenda do CS:GO, um líder e inovador. Ele construiu um legado de vitórias e ensinamentos que continuam a inspirar jogadores de todo o mundo.</p>
+  </section>
+
+  <section class="depoimentos">
+    <h2>Depoimentos</h2>
+    <blockquote>"FalleN me ensinou que liderança vai além do jogo." - yuurih</blockquote>
+    <blockquote>"Ele é o cérebro e o coração do nosso time." - arT</blockquote>
+  </section>
+
+  <section class="news">
+    <h2>Últimas Notícias</h2>
+    <ul>
+      <li><strong>FalleN no CS:GO</strong> - FalleN leva a FURIA para o topo das classificações internacionais!</li>
+      <li><strong>FalleN entrevista</strong> - Uma conversa exclusiva com FalleN sobre seu impacto no CS:GO.</li>
+      <li><strong>FalleN no Twitch</strong> - FalleN se prepara para uma transmissão especial sobre sua jornada no CS:GO.</li>
+    </ul>
+  </section>
+
+  <section class="social-media">
+    <h2>Redes Sociais</h2>
+    <ul>
+      <li><a href="https://twitter.com/fallen" target="_blank">Twitter</a></li>
+      <li><a href="https://www.instagram.com/fallen" target="_blank">Instagram</a></li>
+      <li><a href="https://www.twitch.tv/fallen" target="_blank">Twitch</a></li>
+    </ul>
+  </section>
+
+  <section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div>
+      <strong>1. Qual é o maior feito de FalleN?</strong>
+      <p>FalleN é reconhecido como um dos maiores jogadores de CS:GO, com vitórias em Majors e uma enorme influência na cena global do CS:GO.</p>
+    </div>
+    <div>
+      <strong>2. Quando FalleN começou no CS:GO?</strong>
+      <p>FalleN começou sua carreira no CS:GO em 2012 e rapidamente se tornou um dos jogadores mais importantes do cenário.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html" class="button">Voltar para a Home</a>
+  </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight) {
+          section.classList.add("visible");
+        } else {
+          section.classList.remove("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

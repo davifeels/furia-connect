@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    background: linear-gradient(45deg, #1c1c1c, #444);
+}
+
+.chat-container {
+    background-color: #333;
+    width: 350px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #555;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-box p {
+    margin: 10px 0;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.chat-box .user-message {
+    text-align: right;
+    color: #7a4dff;
+    font-weight: bold;
+}
+
+.chat-box .bot-message {
+    text-align: left;
+    color: #f7a600;
+    font-weight: normal;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #7a4dff;
+}
+
+button {
+    width: 90%; /* O botão ocupará 90% da largura disponível */
+    padding: 12px;
+    background-color: #7a4dff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    display: block;  /* Faz o botão se comportar como um bloco, ocupando a largura disponível */
+    margin: 0 auto;  /* Centraliza o botão horizontalmente */
+}
+
+button:hover {
+    background-color: #5a3dbd;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 400px) {
+    .chat-container {
+        width: 90%;
+    }
+}

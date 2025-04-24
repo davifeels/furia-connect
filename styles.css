@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+}
+
+header {
+    background: #7a4dff;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Alinha os 4 jogadores na mesma fila */
+    gap: 30px;
+    justify-items: center;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto {
+    background: #333333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover img {
+    transform: scale(1.05);
+}
+
+.produto h3 {
+    font-size: 22px;
+    color: #f7a600;
+    margin: 10px 0;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.produto .preco {
+    font-size: 20px;
+    color: #7a4dff;
+    margin: 15px 0;
+}
+
+/* Botões - Agora apenas um para "Clique para ver o documentário" e outro para "Conversar com Jogador" */
+.produto .doc-button {
+    background: #7a4dff;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espaço entre os botões */
+}
+
+.produto .doc-button:hover {
+    background: #5a3dbd;
+}
+
+.produto .chat-button {
+    background: white;
+    color: #7a4dff;
+    border: 2px solid #7a4dff;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.produto .chat-button:hover {
+    background: #7a4dff;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background: #333333;
+    color: white;
+    padding: 20px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer a {
+    color: #7a4dff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.chatbot-button {
+    background-color: #7a4dff;
+    color: #111111;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.chatbot-button:hover {
+    background-color: #5a3dbd;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .produtos {
+        grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha em dispositivos móveis */
+    }
+
+    .produto {
+        max-width: 100%; /* Produtos ocupam toda a largura disponível */
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos {
+        grid-template-columns: 1fr; /* 1 produto por linha em telas muito pequenas */
+    }
+
+    .produto {
+        max-width: 100%; /* Produtos ocupam toda a largura disponível */
+    }
+}

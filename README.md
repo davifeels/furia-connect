@@ -101,3 +101,13 @@ Bate-papo com o jogador de forma personalizada:
 
 A estrutura do projeto é organizada da seguinte maneira:
 
+
+---
+
+## ⚙️ Como Executar Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/davifeels/furia-connect.git
+
+

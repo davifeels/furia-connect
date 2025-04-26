@@ -4,13 +4,13 @@ Projeto web que apresenta os principais jogadores da equipe FURIA de CS:GO. Cada
 
 ## 🧭 Índice
 
-- [📌 Sobre o Projeto](#sobre-o-projeto)
-- [🖼️ Demonstrações](#demonstrações)
-- [💻 Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [📦 Estrutura de Arquivos](#estrutura-de-arquivos)
-- [⚙️ Como Executar Localmente](#como-executar-localmente)
-- [🙋 Contribuição](#contribuição)
-- [📄 Licença](#licença)
+- [📌 Sobre o Projeto](#-sobre-o-projeto)
+- [🖼️ Demonstrações](#-demonstrações)
+- [💻 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📦 Estrutura de Arquivos](#-estrutura-de-arquivos)
+- [⚙️ Como Executar Localmente](#-como-executar-localmente)
+- [🙋 Contribuição](#-contribuição)
+- [📄 Licença](#-licença)
 
 ---
 
@@ -27,19 +27,18 @@ O projeto tem como objetivo homenagear e destacar os principais jogadores da FUR
 ## 🖼️ Demonstrações
 
 ### Página Inicial
-
 Interface com os 4 jogadores e acesso aos seus documentários e chats:
 
-![Página Inicial]
+![Página Inicial](./assets/home.jpg)
+
+---
 
 ### Página de Documentário (arT)
-
 Detalhes sobre a trajetória do jogador:
 
-![Documentário arT](/assets/art2.jpg)
+![Documentário arT](./assets/art2.jpg)
 
 ### Chatbot Interativo (arT)
-
 Bate-papo com o jogador de forma personalizada:
 
 ![Chatbot arT](./assets/art3.jpg)
@@ -47,44 +46,39 @@ Bate-papo com o jogador de forma personalizada:
 ---
 
 ### Página de Documentário (FalleN)
-
 Detalhes sobre a trajetória do jogador:
 
 ![Documentário FalleN](./assets/fallen5.jpg)
 
 ### Chatbot Interativo (FalleN)
-
 Bate-papo com o jogador de forma personalizada:
 
-![Chatbot FalleN](./assets/art4.jpg)
+![Chatbot FalleN](./assets/fallen_chat.jpg)
 
 ---
 
 ### Página de Documentário (KSCERATO)
-
 Detalhes sobre a trajetória do jogador:
 
-![Documentário KSCERATO](/assets/k4.jpg)
+![Documentário KSCERATO](./assets/k4.jpg)
 
 ### Chatbot Interativo (KSCERATO)
-
 Bate-papo com o jogador de forma personalizada:
 
-![Chatbot KSCERATO](.//assets/k2.jpg)
+![Chatbot KSCERATO](./assets/k2.jpg)
 
 ---
 
 ### Página de Documentário (yuurih)
-
 Detalhes sobre a trajetória do jogador:
 
 ![Documentário yuurih](./assets/yuri4.jpg)
 
 ### Chatbot Interativo (yuurih)
-
 Bate-papo com o jogador de forma personalizada:
 
 ![Chatbot yuurih](./assets/yuri3.jpg)
+
 ---
 
 ## 💻 Tecnologias Utilizadas
@@ -101,6 +95,37 @@ Bate-papo com o jogador de forma personalizada:
 
 A estrutura do projeto é organizada da seguinte maneira:
 
+furia-connect-man/
+├── assets/                   # Imagens, vídeos e mídias em geral
+│   └── (todas as imagens .jpg)
+
+├── css/                      # Todos os arquivos de estilo (CSS)
+│   ├── players/              # Estilos específicos dos jogadores
+│   │   ├── 1.css
+│   │   ├── 2.css
+│   │   ├── 3.css
+│   │   └── 4.css
+│   ├── bot.css               # Estilo dos chatbots
+│   └── styles.css            # Estilo geral do site
+
+├── js/                       # Scripts JavaScript
+│   └── bot.js                # Lógica dos chatbots
+
+├── pages/                    # Páginas HTML
+│   ├── chatbots/             # Chatbots individuais
+│   │   ├── chatbot_art.html
+│   │   ├── chatbot_fallen.html
+│   │   ├── chatbot_kscerato.html
+│   │   └── chatbot_yuurih.html
+│   ├── docs/                 # Documentários dos jogadores
+│   │   ├── doc_art.html
+│   │   ├── doc_fallen.html
+│   │   ├── doc_kscerato.html
+│   │   └── doc_yuurih.html
+│   └── index.html            # Página inicial
+
+├── README.md                 # Documentação do projeto
+├── package-lock.json         # Gerenciado de dependências (Node.js)
 
 ---
 

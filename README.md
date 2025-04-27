@@ -2,6 +2,16 @@
 
 Projeto web que apresenta os principais jogadores da equipe FURIA de CS:GO. Cada jogador possui uma página de documentário dedicada e um chatbot interativo com respostas personalizadas. O design é moderno e responsivo, com foco na experiência do usuário.
 
+
+## Imagens
+
+### Doc Fallen
+![Doc Fallen](assets/docfallen.JPG)
+
+### Players
+![Players 1](assets/players1.JPG)
+
+
 ## 🧭 Índice
 
 - [📌 Sobre o Projeto](#-sobre-o-projeto)

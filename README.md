@@ -66,7 +66,7 @@ Detalhes sobre a trajetória do jogador:
 ### Chatbot Interativo (FalleN)
 Bate-papo com o jogador de forma personalizada:
 
-![Chatbot FalleN](./assets/fallen_chat.jpg)
+![Chatbot FalleN](./assets/fallen4.jpg)
 
 ---
 

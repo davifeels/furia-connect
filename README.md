@@ -11,6 +11,9 @@ Projeto web que apresenta os principais jogadores da equipe FURIA de CS:GO. Cada
 ### Players
 ![Players 1](assets/players1.JPG)
 
+### Tela De Cadastro
+![Players 1](assets/cadastro.JPG)
+
 
 ## 🧭 Índice
 

@@ -42,7 +42,7 @@ O projeto tem como objetivo homenagear e destacar os principais jogadores da FUR
 ### Página Inicial
 Interface com os 4 jogadores e acesso aos seus documentários e chats:
 
-![Página Inicial](./assets/home.jpg)
+![Página Inicial](./assets/download)
 
 ---
 

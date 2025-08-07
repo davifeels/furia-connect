@@ -101,7 +101,7 @@ furia-connect-man/
 │   └── bot.js      # Script JavaScript principal que implementa a lógica e as respostas personalizadas dos chatbots.
 │
 ├── pages/          # Guarda todas as páginas HTML do site, organizadas por funcionalidade.
-│   ├── chatbots/   # Páginas HTML que contêm a interface e a integração de cada chatbot individual.
+│   ├── chatbots/   # Páginas HTML que contêm a interface e a integração de cada chatbot iindividual.
 │   │   ├── chatbot_art.html
 │   │   ├── chatbot_fallen.html
 │   │   ├── chatbot_kscerato.html

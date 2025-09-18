@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Meu estilo de jogo agressivo vem da minha filosofia: quem não arrisca não petisca!",
                 "Ser capitão da FURIA é um desafio diário, mas amo liderar esse time de guerreiros.",
                 "Nosso estilo de jogo único vem da nossa química e da vontade de quebrar paradigmas.",
-                "A pressão que fazemos vem do treino intenso e da confiança que temos uns nos outros."
+                "A pressão que fazemos vem do treino intenso e da confiança que temos uns nos outross."
             ],
             color: "#ff3a3a",
             info: {
